@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #FAFAFA;
+  font-family: 'Arial', sans-serif;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+form > label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  color: #757575;
+}
+
+form > input,
+form > textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form > textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form > input:focus,
+form > textarea:focus {
+  outline: none;
+  border-color: #03A9F4 !important;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+form > input:valid,
+form > textarea:valid {
+  border-color: #8BC34A;
+}
+
+form > input:invalid,
+form > textarea:invalid {
+  border-color: #f08080;
+}
+
+form > button {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #03A9F4;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form > button:hover {
+  background-color: #2196F3;
+}
+
+form > button:active {
+  background-color: #2196F3;
+}
+
+@media (max-width: 480px) {
+  form {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+}
