@@ -15,24 +15,43 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
-form {
+.container {
   width: 100%;
   max-width: 400px;
+}
+
+form {
+  max-width: 100%;
   padding: 2rem;
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-form > label {
+fieldset {
+  border: 0;
+}
+
+legend.form-legend {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+label.form-label {
   display: block;
   margin-bottom: 0.4rem;
   font-size: 0.9rem;
   color: #757575;
 }
 
-form > input,
-form > textarea {
+input.form-input,
+textarea.form-textarea {
   width: 100%;
   padding: 0.8rem;
   margin-bottom: 10px;
@@ -42,29 +61,29 @@ form > textarea {
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-form > textarea {
+textarea.form-textarea {
   resize: vertical;
   min-height: 100px;
 }
 
-form > input:focus,
-form > textarea:focus {
+input.form-input:focus,
+textarea.form-textarea:focus {
   outline: none;
   border-color: #03A9F4 !important;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
 }
 
-form > input:valid,
-form > textarea:valid {
+input.form-input:valid,
+textarea.form-textarea:valid {
   border-color: #8BC34A;
 }
 
-form > input:invalid,
-form > textarea:invalid {
+input.form-input:invalid,
+textarea.form-textarea:invalid {
   border-color: #f08080;
 }
 
-form > button {
+button.form-button {
   width: 100%;
   padding: 0.8rem;
   border: none;
@@ -76,12 +95,12 @@ form > button {
   transition: background-color 0.3s;
 }
 
-form > button:hover {
+button.form-button:hover {
   background-color: #2196F3;
 }
 
-form > button:active {
-  background-color: #2196F3;
+button.form-button:active {
+  background-color: #1976D2;
 }
 
 @media (max-width: 480px) {

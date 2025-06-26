@@ -8,17 +8,21 @@
 </head>
 <body>
     <div class="container">
-        <form action="">
-            <label for="inputNome">Primeiro nome:</label>
-            <input type="text" id="inputNome" required maxlength="50" min="2">
+        <form action="" method="post">
+            <fieldset>
+                <legend class="form-legend">Informações de Contato</legend>
+                <label for="inputNome" class="form-label">Primeiro nome:</label>
+                <input type="text" id="inputNome" name="nome" required maxlength="50" minlength="2" class="form-input">
 
-            <label for="inputEmail">Endereço de Email:</label>
-            <input type="email" name="email" id="inputEmail" required maxlength="50">
-
-            <label for="textAreaMensagem">Mensagem:</label>
-            <textarea name="textAreaMensagem" id="textAreaMensagem" required maxlength="300"></textarea>
-
-            <button>Enviar mensagem</button>
+                <label for="inputEmail" class="form-label">Endereço de Email:</label>
+                <input type="email" name="email" id="inputEmail" required maxlength="50" class="form-input">
+            </fieldset>
+            <fieldset>
+                <legend class="form-legend">Mensagem</legend>
+                <label for="textAreaMensagem" class="form-label">Mensagem:</label>
+                <textarea name="mensagem" id="textAreaMensagem" required maxlength="300" class="form-textarea"></textarea>
+            </fieldset>
+            <button type="submit" class="form-button">Enviar mensagem</button>
         </form>
     </div>
 </body>
