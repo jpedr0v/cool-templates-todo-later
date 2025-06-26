@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template de Formulário para Fale Conosco com Material UI Icons</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form action="" method="post">
+            <fieldset>
+                <div class="div-group">
+                    <span class="material-icons">account_circle</span>
+                    <legend class="form-legend">Informações de Contato</legend>
+                    <label for="inputNome" class="form-label">Nome:</label>
+                    <input type="text" id="inputNome" name="nome" required maxlength="50" minlength="2" class="form-input">
+                </div>
+
+                <div class="div-group">
+                    <span class="material-icons">mail</span>
+                    <label for="inputEmail" class="form-label">Email:</label>
+                    <input type="email" name="email" id="inputEmail" required maxlength="50" class="form-input">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend class="form-legend">Mensagem</legend>
+                <label for="textAreaMensagem" class="form-label">Mensagem:</label>
+                <textarea name="mensagem" id="textAreaMensagem" required maxlength="300" class="form-textarea"></textarea>
+            </fieldset>
+            <button type="submit" class="form-button">Enviar mensagem</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #FAFAFA;
+  font-family: 'Arial', sans-serif;
+}
+
+div.container {
+  width: 100%;
+  max-width: 500px;
+}
+
+form {
+  max-width: 100%;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  border: 0;
+}
+
+legend.form-legend {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+div.div-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.material-icons {
+  vertical-align: middle;
+  font-size: 1.5rem;
+  color: #03A9F4;
+  margin-right: 0.3rem;
+}
+
+label.form-label {
+  display: block;
+  margin-right: 0.4rem;
+  font-size: 0.9rem;
+  color: #757575;
+}
+
+input.form-input,
+textarea.form-textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+textarea.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+input.form-input:focus,
+textarea.form-textarea:focus {
+  outline: none;
+  border-color: #03A9F4 !important;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+input.form-input:valid,
+textarea.form-textarea:valid {
+  border-color: #8BC34A;
+}
+
+input.form-input:invalid,
+textarea.form-textarea:invalid {
+  border-color: #f08080;
+}
+
+button.form-button {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #03A9F4;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.form-button:hover {
+  background-color: #2196F3;
+}
+
+button.form-button:active {
+  background-color: #1976D2;
+}
+
+@media (max-width: 480px) {
+  form {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+}
