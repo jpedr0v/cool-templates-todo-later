@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template de Formulário para Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <form action="" method="post">
+                <fieldset>
+                    <legend class="form-legend">Informações de nome</legend>
+                    <div class="div-group">
+                        <label for="inputNome" class="form-label">Nome:</label>
+                        <input type="text" id="inputNome" name="nome" required maxlength="50" minlength="2" class="form-input">
+                        <label for="inputSobrenome" class="form-label">Sobrenome:</label>
+                        <input type="text" id="inputSobrenome" name="sobrenome" required maxlength="50" minlength="2" class="form-input">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="form-legend">E-mail</legend>
+                    <div class="div-group">
+                        <label for="inputEmail" class="form-label">E-mail:</label>
+                        <input type="email" name="email" id="inputEmail" required maxlength="50" class="form-input">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="form-legend">Informação de aplicação</legend>
+                    <div class="option-group">
+                        <label for="inputAplicacao" class="form-label">De qual lado da aplicação você desenvolve?</label>
+                        <label for="inputAplicacao" class="form-label"><input type="radio" name="aplicacao" id="devWeb" value="frontend" class="form-radio" checked>Front-End</label>
+                        <label for="inputAplicacao" class="form-label"><input type="radio" name="aplicacao" id="devBack" value="backend" class="form-radio">Back-End</label>
+                        <label for="inputAplicacao" class="form-label"><input type="radio" name="aplicacao" id="fullStack" value="fullstack" class="form-radio">Full Stack</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="form-legend">Senioridade</legend>
+                    <div class="option-group">
+                        <label for="inputSenioridade" class="form-label">Senioridade:</label>
+                        <select name="senioridade" id="senioridade">
+                            <option value="" selected disabled hidden>Selecione</option>
+                            <option value="junior" required>Júnior</option>
+                            <option value="pleno" required>Pleno</option>
+                            <option value="senior" required>Senior</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="form-legend">Tecnologias</legend>
+                    <label for="inputTecnologia" class="checkbox-label">Selecione as tecnologias que utiliza:</label>
+                    <div class="checkbox-group">
+                        <label for="checkbox-wrapper">
+                            <input type="checkbox" name="tecnologias[]" id="tecnologia1" value="HTML" class="form-checkbox">
+                            <span>HTML</span>
+                        </label>
+                        <label for="checkbox-wrapper">
+                            <input type="checkbox" name="tecnologias[]" id="tecnologia2" value="HTML" class="form-checkbox">
+                            <span>CSS</span>
+                        </label>
+                        <label for="checkbox-wrapper">
+                            <input type="checkbox" name="tecnologias[]" id="tecnologia3" value="HTML" class="form-checkbox">
+                            <span>JavaScript</span>
+                        </label>
+                        <label for="checkbox-wrapper">
+                            <input type="checkbox" name="tecnologias[]" id="tecnologia4" value="HTML" class="form-checkbox">
+                            <span>PHP</span>
+                        </label>
+                        <label for="checkbox-wrapper">
+                            <input type="checkbox" name="tecnologias[]" id="tecnologia5" value="HTML" class="form-checkbox">
+                            <span>C#</span>
+                        </label>
+                        <label for="checkbox-wrapper">
+                            <input type="checkbox" name="tecnologias[]" id="tecnologia6" value="HTML" class="form-checkbox">
+                            <span>Python</span>
+                        </label>
+                        <label for="checkbox-wrapper">
+                            <input type="checkbox" name="tecnologias[]" id="tecnologia17 value="HTML" class="form-checkbox">
+                            <span>Java</span>
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="form-buttons">
+                    <input type="reset" value="Limpar" class="form-button">
+                    <input type="submit" value="Salvar" class="form-button">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
