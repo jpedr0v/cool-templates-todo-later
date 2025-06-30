@@ -16,6 +16,7 @@ Fornecer uma coleção pessoal de templates reutilizáveis para acelerar o desen
 
 - [Fale Conosco](https://github.com/jpedr0v/cool-templates-todo-later/tree/main/fale_conosco) — formulário simples e responsivo de contato, com validação de campos.
 - [Fale Conosco + Ícones](https://github.com/jpedr0v/cool-templates-todo-later/tree/main/fale_conosco%2Bmaterial_icons) — Versão do formulário anterior, mas com ícones em Material UI.
+- [Cadastro (Radio + Checkbox)](https://github.com/jpedr0v/cool-templates-todo-later/tree/main/cadastro) - Formulário de cadastro com radio buttons e checkboxes.
 
 ---
 
